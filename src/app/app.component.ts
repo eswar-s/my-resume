@@ -33,11 +33,11 @@ export class AppComponent implements OnInit {
     { key: this.formatKey('Location', 10), value: 'Los Angeles, USA' }
   ];
 
-  externalLinks = [
+  /* externalLinks = [
     { key: 'LinkedIn', value: 'http://linkedin.com/in/eswar-s', icon: 'linkedin' },
     { key: 'Stack Overflow', value: 'https://stackexchange.com/users/6147710/eswar', icon: 'stackoverflow' },
     { key: 'GitHub', value: 'https://github.com/eswar-s', icon: 'github' },
-  ];
+  ]; */
 
   personalInfo = [
     { key: this.formatKey('Date of Birth', 18), value: '15 July 1991' },

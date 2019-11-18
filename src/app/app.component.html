@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="myr-media-content" #topProfilePicture>
-      <myr-profile-picture src="/assets/eswar.webp"></myr-profile-picture>
+      <myr-profile-picture src="assets/eswar.webp"></myr-profile-picture>
     </div>
     <div class="myr-text-content">
       <p>
@@ -23,8 +23,14 @@
       </p>
       <h3>Contact</h3>
       <ul class="myr-external-links">
-        <li *ngFor="let option of externalLinks" [title]="option.key">
-          <a target="_blank" [href]="option.value" [class]="option.icon"></a>
+        <li title="LinkedIn">
+          <a target="_blank" style="background-image: url(assets/linkedin-in-brands.svg)" href="http://linkedin.com/in/eswar-s"></a>
+        </li>
+        <li title="Stack Overflow">
+          <a target="_blank" style="background-image: url(assets/stack-overflow-brands.svg)" href="https://stackexchange.com/users/6147710/eswar"></a>
+        </li>
+        <li title="GitHub">
+          <a target="_blank" style="background-image: url(assets/github-brands.svg)" href="https://github.com/eswar-s"></a>
         </li>
       </ul>
       <p class="myr-info-oneline" *ngFor="let option of contactInfo">
