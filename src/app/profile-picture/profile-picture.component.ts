@@ -9,6 +9,8 @@ export class ProfilePictureComponent implements OnInit {
 
   @Input() src: string;
 
+  @Input() fallback: string;
+
   constructor() { }
 
   ngOnInit() {
