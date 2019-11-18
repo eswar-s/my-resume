@@ -1,0 +1,112 @@
+<article [class]="theme">
+  <section class="myr-overview-container">
+    <div class="myr-text-content myr-sticky">
+      <h2>Eswaraiah Vemula</h2>
+      <h4>Fullstack Developer</h4>
+      <div class="myr-theme-switch">
+        <input type="checkbox" id="myr-theme-switch" (click)="toggleTheme()" name="set-name" class="switch-input" [checked]="theme === 'light'">
+        <label for="myr-theme-switch" class="switch-label">&nbsp;</label>
+      </div>
+    </div>
+    <div class="myr-media-content" #topProfilePicture>
+      <myr-profile-picture src="/assets/eswar.webp"></myr-profile-picture>
+    </div>
+    <div class="myr-text-content">
+      <p>
+        {{experience}} of technical expertise with Analysis, Design, Development.
+        Good at both frontend and backend technologies.
+        Capable of launching application from idea to production independently.
+      </p>
+      <h3>Currently working on</h3>
+      <p class="myr-info-oneline" *ngFor="let option of currentSkills">
+        <span [innerHTML]="option.key"></span><span>{{option.value}}</span>
+      </p>
+      <h3>Contact</h3>
+      <ul class="myr-external-links">
+        <li *ngFor="let option of externalLinks" [title]="option.key">
+          <a target="_blank" [href]="option.value" [class]="option.icon"></a>
+        </li>
+      </ul>
+      <p class="myr-info-oneline" *ngFor="let option of contactInfo">
+        <span [innerHTML]="option.key"></span><span>{{option.value}}</span>
+      </p>
+    </div>
+    <!-- <div class="myr-media-content-fixed" #bottomProfilePicture [style.bottom.px]="bottomPosition">
+      <myr-profile-picture src="/assets/eswar.webp"></myr-profile-picture>
+    </div> -->
+  </section>
+  <section class="myr-details-container">
+    <div class="myr-cards-container">
+      <div class="myr-card">
+        <header>
+          <h3>SKILLS</h3>
+        </header>
+        <div class="myr-border">&nbsp;</div>
+        <div class="myr-card-content">
+          <h4>Expert:</h4>
+          <p>Java, J2EE, Javascript, HTML5, CSS3</p>
+          <p>Spring Boot, Apache Camel, ElasticSearch, MySQL, Angular, ReactJS, TypeScript, SCSS, NgRx: Store, Effects</p>
+        </div>
+        <div class="myr-card-content">
+          <h4>Intermediate:</h4>
+          <p>Python, PHP, Ruby, NodeJS</p>
+          <p>MongoDB, Jenkins, ActiveMQ, AWS, FireBase, WebRTC, WebSockets, Karma, Jasmine, Protractor, JUnit, Selenium, Ruby on Rails, DJango, Express, Wordpress</p>
+        </div>
+        <div class="myr-card-content">
+          <h4>Beginner:</h4>
+          <p>Swift</p>
+          <p>Polymer, VueJS, AEM</p>
+        </div>
+      </div>
+      <div class="myr-card">
+        <header>
+          <h3>WORKING EXPERIENCE</h3>
+        </header>
+        <div class="myr-border">&nbsp;</div>
+        <div class="myr-card-content">
+          <h4>Sep 2019 - Present</h4>
+          <p>Client: <strong>Greenlots</strong></p>
+          <p>Working as Senior Fullstack developer at <strong>TringApps Inc</strong></p>
+          <p>Los Angeles, USA</p>
+        </div>
+        <div class="myr-card-content">
+          <h4>Nov 2018 - Aug 2019</h4>
+          <p>Client: Greenlots</p>
+          <p>Working as Technical Lead at <strong>TringApps Research Labs</strong></p>
+          <p>Chennai, India</p>
+        </div>
+        <div class="myr-card-content">
+          <h4>Aug 2018 - Oct 2018</h4>
+          <p>Working as Software Engineer - II at <strong>CaratLane</strong></p>
+          <p>Chennai, India</p>
+        </div>
+        <div class="myr-card-content">
+          <h4>Jun 2011 - Jul 2018</h4>
+          <p>Working as Project Lead at <strong>JeanMartin Systems India Pvt Ltd</strong></p>
+          <p>Chennai, India</p>
+        </div>
+      </div>
+      <div class="myr-card">
+        <header>
+          <h3>EDUCATIONAL QUALIFICATION</h3>
+        </header>
+        <div class="myr-border">&nbsp;</div>
+        <div class="myr-card-content">
+          <p><strong>Bachelor of Technology</strong> specialization in Information Technology.</p>
+          <p>Affiliated to Anna University, Chennai, India</p>
+        </div>
+      </div>
+      <div class="myr-card">
+        <header>
+          <h3>PERSONAL PROFILE</h3>
+        </header>
+        <div class="myr-border">&nbsp;</div>
+        <div class="myr-card-content">
+          <p *ngFor="let option of personalInfo">
+            <span [innerHTML]="option.key"></span><span>{{option.value}}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
