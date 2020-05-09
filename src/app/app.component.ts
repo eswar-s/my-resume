@@ -15,22 +15,20 @@ export class AppComponent implements OnInit {
   theme = 'dark';
 
   bottomPosition: number = -150;
-
-  private readonly formatKey = (val: string, padding) => val.padEnd(padding, ' ').replace(/\s/g, '&nbsp;').concat(':&nbsp;');
   
   experience = this.getExperience(new Date(1340582400000));
   
   currentSkills = [
-    { key: this.formatKey('ServerSide', 11), value: 'Java, Spring Boot, Apache Camel' },
-    { key: this.formatKey('FrontEnd', 12), value: 'Angular, TypeScript, SCSS, NgRx' },
-    { key: this.formatKey('Database', 11), value: 'ElasticSearch, MySQL' },
-    { key: this.formatKey('Others', 14), value: 'AWS, Jenkins, ActiveMQ' },
+    { key: 'ServerSide', value: 'Java, Spring Boot, Apache Camel' },
+    { key: 'FrontEnd', value: 'Angular, TypeScript, SCSS, NgRx' },
+    { key: 'Database', value: 'ElasticSearch, MySQL' },
+    { key: 'Others', value: 'AWS, Jenkins, ActiveMQ' },
   ];
 
   contactInfo = [
-    { key: this.formatKey('Email', 12), value: 'href2eswar@gmail.com' },
-    { key: this.formatKey('Mobile', 11), value: '+1 (737) 708 - 7688' },
-    { key: this.formatKey('Location', 10), value: 'Los Angeles, USA' }
+    { key: 'Email', value: 'href2eswar@gmail.com' },
+    { key: 'Mobile', value: '+1 (737) 708 - 7688' },
+    { key: 'Location', value: 'Los Angeles, USA' }
   ];
 
   /* externalLinks = [
@@ -40,10 +38,10 @@ export class AppComponent implements OnInit {
   ]; */
 
   personalInfo = [
-    { key: this.formatKey('Date of Birth', 18), value: '15 July 1991' },
-    { key: this.formatKey('Gender', 20), value: 'Male' },
-    { key: this.formatKey('Marital Status', 17), value: 'Married' },
-    { key: this.formatKey('Nationality', 19), value: 'Indian' }
+    { key: 'Date of Birth', value: '15 July 1991' },
+    { key: 'Gender', value: 'Male' },
+    { key: 'Marital Status', value: 'Married' },
+    { key: 'Nationality', value: 'Indian' }
   ];
 
   /* @HostListener('window:scroll', ['$event'])
@@ -67,6 +65,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    
     
   }
 

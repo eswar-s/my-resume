@@ -18,9 +18,11 @@
         Capable of launching application from idea to production independently.
       </p>
       <h3>Currently working on</h3>
-      <p class="myr-info-oneline" *ngFor="let option of currentSkills">
-        <span [innerHTML]="option.key"></span><span>{{option.value}}</span>
-      </p>
+      <div class="myr-key-value">
+        <p class="myr-info-oneline" *ngFor="let option of currentSkills">
+          <span>{{option.key}}</span><span>{{option.value}}</span>
+        </p>
+      </div>
       <h3>Contact</h3>
       <ul class="myr-external-links">
         <li title="LinkedIn">
@@ -33,9 +35,11 @@
           <a target="_blank" style="background-image: url(assets/github-brands.svg)" href="https://github.com/eswar-s"></a>
         </li>
       </ul>
-      <p class="myr-info-oneline" *ngFor="let option of contactInfo">
-        <span [innerHTML]="option.key"></span><span>{{option.value}}</span>
-      </p>
+      <div class="myr-key-value">
+        <p class="myr-info-oneline" *ngFor="let option of contactInfo">
+          <span>{{option.key}}</span><span>{{option.value}}</span>
+        </p>
+      </div>
     </div>
     <!-- <div class="myr-media-content-fixed" #bottomProfilePicture [style.bottom.px]="bottomPosition">
       <myr-profile-picture src="/assets/eswar.webp"></myr-profile-picture>
@@ -70,7 +74,12 @@
         </header>
         <div class="myr-border">&nbsp;</div>
         <div class="myr-card-content">
-          <h4>Sep 2019 - Present</h4>
+          <h4>Feb 2020 - Present</h4>
+          <p>Working as Senior Software Engineer at <strong>Zeco Systems Inc.,</strong> commercially known as <strong>Greenlots</strong></p>
+          <p>Los Angeles, USA</p>
+        </div>
+        <div class="myr-card-content">
+          <h4>Sep 2019 - Jan 2020</h4>
           <p>Client: <strong>Greenlots</strong></p>
           <p>Working as Senior Fullstack developer at <strong>TringApps Inc</strong></p>
           <p>Los Angeles, USA</p>
@@ -107,9 +116,9 @@
           <h3>PERSONAL PROFILE</h3>
         </header>
         <div class="myr-border">&nbsp;</div>
-        <div class="myr-card-content">
+        <div class="myr-card-content myr-key-value">
           <p *ngFor="let option of personalInfo">
-            <span [innerHTML]="option.key"></span><span>{{option.value}}</span>
+            <span>{{option.key}}</span><span>{{option.value}}</span>
           </p>
         </div>
       </div>
